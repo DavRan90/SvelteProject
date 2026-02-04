@@ -8,6 +8,7 @@ export async function getEvents() {
 
 export async function createEvent(event: {
   title: string;
+  description: string;
   date: string;
 }) {
   const res = await fetch(`${API_BASE}/events`, {
@@ -20,4 +21,39 @@ export async function createEvent(event: {
 
   if (!res.ok) throw new Error('Failed to create event');
   return res.json();
+}
+
+export async function updateEvent(
+  id: number,
+  event: {
+    title: string;
+    description: string;
+    date: string;
+  }
+) {
+  const res = await fetch(`${API_BASE}/events/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(event)
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to update event');
+  }
+
+  return;
+}
+
+export async function deleteEvent(id: number) {
+  const res = await fetch(`${API_BASE}/events/${id}`, {
+    method: 'DELETE'
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to delete event');
+  }
+
+  return;
 }

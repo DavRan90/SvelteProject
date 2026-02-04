@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\MinimalApi.csproj": {}
+    "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\MinimalApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\MinimalApi.csproj": {
+    "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\MinimalApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\MinimalApi.csproj",
+        "projectUniqueName": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\MinimalApi.csproj",
         "projectName": "MinimalApi",
-        "projectPath": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\MinimalApi.csproj",
+        "projectPath": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\MinimalApi.csproj",
         "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\obj\\",
+        "outputPath": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

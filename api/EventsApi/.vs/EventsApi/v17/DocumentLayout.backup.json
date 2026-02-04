@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\",
+  "WorkspaceRootPath": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\eventsdirectory\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\eventcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\eventcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\eventsalt\\eventcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\eventsdirectory\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\eventupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\eventupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\eventsalt\\eventupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\eventsdirectory\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\eventsalt\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\eventsdirectory\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\eventdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\eventdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\eventsalt\\eventdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\eventsdirectory\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\eventendpointsalt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\eventendpointsalt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\eventsalt\\eventendpointsalt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\eventsdirectory\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\eventget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\eventget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\eventsalt\\eventget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,81 +58,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EventUpdate.cs",
-              "DocumentMoniker": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventUpdate.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\src\\EventsAlt\\EventUpdate.cs",
-              "ToolTip": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventUpdate.cs",
-              "RelativeToolTip": "MinimalApi\\src\\EventsAlt\\EventUpdate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T16:08:59.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EventGet.cs",
-              "DocumentMoniker": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventGet.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\src\\EventsAlt\\EventGet.cs",
-              "ToolTip": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventGet.cs",
-              "RelativeToolTip": "MinimalApi\\src\\EventsAlt\\EventGet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T16:08:18.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EventEndpointsAlt.cs",
-              "DocumentMoniker": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventEndpointsAlt.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\src\\EventsAlt\\EventEndpointsAlt.cs",
-              "ToolTip": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventEndpointsAlt.cs",
-              "RelativeToolTip": "MinimalApi\\src\\EventsAlt\\EventEndpointsAlt.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T16:08:15.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EventDelete.cs",
-              "DocumentMoniker": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventDelete.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\src\\EventsAlt\\EventDelete.cs",
-              "ToolTip": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventDelete.cs",
-              "RelativeToolTip": "MinimalApi\\src\\EventsAlt\\EventDelete.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T16:08:09.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EventCreate.cs",
-              "DocumentMoniker": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventCreate.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\src\\EventsAlt\\EventCreate.cs",
-              "ToolTip": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventCreate.cs",
-              "RelativeToolTip": "MinimalApi\\src\\EventsAlt\\EventCreate.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCwAAAAnAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\Program.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\Program.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\Program.cs",
+              "RelativeToolTip": "MinimalApi\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T16:08:07.133Z",
+              "WhenOpened": "2026-02-04T07:31:18.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "EventUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventUpdate.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\src\\EventsAlt\\EventUpdate.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventUpdate.cs",
+              "RelativeToolTip": "MinimalApi\\src\\EventsAlt\\EventUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:08:59.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EventGet.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventGet.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\src\\EventsAlt\\EventGet.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventGet.cs",
+              "RelativeToolTip": "MinimalApi\\src\\EventsAlt\\EventGet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:08:18.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventEndpointsAlt.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventEndpointsAlt.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\src\\EventsAlt\\EventEndpointsAlt.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventEndpointsAlt.cs",
+              "RelativeToolTip": "MinimalApi\\src\\EventsAlt\\EventEndpointsAlt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:08:15.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventDelete.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventDelete.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\src\\EventsAlt\\EventDelete.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventDelete.cs",
+              "RelativeToolTip": "MinimalApi\\src\\EventsAlt\\EventDelete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:08:09.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventCreate.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventCreate.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\src\\EventsAlt\\EventCreate.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventCreate.cs",
+              "RelativeToolTip": "MinimalApi\\src\\EventsAlt\\EventCreate.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:08:07.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Event.cs",
-              "DocumentMoniker": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\Event.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\Event.cs",
               "RelativeDocumentMoniker": "MinimalApi\\src\\EventsAlt\\Event.cs",
-              "ToolTip": "C:\\Users\\david\\EventsDirectory\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\Event.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\Event.cs",
               "RelativeToolTip": "MinimalApi\\src\\EventsAlt\\Event.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T16:08:05.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T16:08:05.255Z"
             }
           ]
         }

@@ -11,7 +11,7 @@
 
     export let events: Event[];
     export let onDelete: (id: number) => void;
-    export let onEdit: (id: number, updateTitle: string) => void;
+    export let onEdit: (id: number, event: Event) => void;
 
 </script>
 
