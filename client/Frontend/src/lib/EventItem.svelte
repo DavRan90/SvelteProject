@@ -1,16 +1,24 @@
 <script lang="ts">
 
-    interface Event {
+    interface EventDto {
         id: number;
         title: string;
         description: string;
         date: string;
         editing: boolean;
+        categoryId: number;
+    }
+    interface Category {
+        id: number;
+        name: string;
     }
 
-    export let event: Event;
+    import { getCategories } from '$lib/api';
+    import { onMount } from 'svelte';
+
+    export let event: EventDto;
     export let onDelete: (id: number) => void;
-    export let onEdit: (id: number, event: Event) => void;
+    export let onEdit: (id: number, event: EventDto) => void;
 
     function handleDelete(){
         onDelete(event.id);
@@ -24,6 +32,12 @@
         event.editing = !event.editing;
         onEdit(event.id, event);
     }
+
+    let categories: Category[] = [];
+        
+    onMount(async () => {
+        categories = await getCategories();
+    });
 
 </script>
 
@@ -55,12 +69,28 @@
                 </label>
                 </div>
                 <div>
+                    <label>
+                        Category
+                        <select
+                            bind:value={event.categoryId}
+                            onchange={(e) => {
+                                event.categoryId = Number(e.currentTarget.value);
+                                console.log('categoryId:', event.categoryId, typeof event.categoryId);
+                            }}
+                        >
+                            <option value={null}>No category</option>
+                            {#each categories as category}
+                                <option value={category.id}>
+                                {category.name}
+                                </option>
+                            {/each}
+                            </select>
+                    </label>
+                </div>
+                <div>
                     <button type="submit">Save</button>
                 </div>
             </form>
-            <!-- <input type="text" bind:value={event.title}/>
-            <input type="text" bind:value={event.description}/>
-            <input type="text" bind:value={event.date}/> -->
         </div>
             <button class="disabled emoji">✏️</button>
         {/if}

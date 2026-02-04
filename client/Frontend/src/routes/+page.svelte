@@ -1,30 +1,35 @@
 <script lang="ts">
     import EventList from "$lib/EventList.svelte";
     import { onMount } from 'svelte';
-    import { getEvents, createEvent, updateEvent, deleteEvent } from '$lib/api';
+    import { getEvents, createEvent, updateEvent, deleteEvent, getCategories} from '$lib/api';
 
-    interface Event {
+    interface EventDto {
         id: number;
         title: string;
         description: string;
         date: string;
         editing: boolean;
+        categoryId: number;
     }
 
     let events = $state([]);
-    let newEvent = $state({title: "Default title", description: "Default Description", date: "1970-05-01"});
+    let categories = $state([]);
+    let selectedCategoryId = $state(0);
+    let newEvent = $state({title: "Default title", description: "Default Description", date: "1970-05-01", categoryId: 0});
         
     onMount(async () => {
     events = await getEvents();
+    categories = await getCategories();
   });
         async function addEvent() {
             await createEvent({
                 title: newEvent.title,
                 description: newEvent.description,
-                date: newEvent.date
+                date: newEvent.date,
+                categoryId: selectedCategoryId
                 });
             events = await getEvents();
-            newEvent = {title: "", description: "", date: ""}
+            newEvent = {title: "", description: "", date: "", categoryId: 0}
         }
 
         async function onDelete(id: number){
@@ -32,11 +37,12 @@
             events = await getEvents();
         }
 
-        async function onUpdate(id: number, event: Event) {
+        async function onUpdate(id: number, event: EventDto) {
             await updateEvent(id, {
             title: event.title,
             description: event.description,
-            date: event.date
+            date: event.date,
+            categoryId: event.categoryId
             });
             events = await getEvents();
         }
@@ -62,6 +68,20 @@
       <label>
         Date
         <input type="text" bind:value={newEvent.date}/>
+      </label>
+    </div>
+    <div>
+      <label>
+        Category
+        <select bind:value={selectedCategoryId}>
+          <option value={null}>No category</option>
+
+          {#each categories as category}
+            <option value={category.id}>
+              {category.name}
+            </option>
+          {/each}
+        </select>
       </label>
     </div>
     <button type="submit">Create</button>

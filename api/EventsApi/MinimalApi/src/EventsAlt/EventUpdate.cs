@@ -15,6 +15,7 @@ namespace MinimalApi.src.EventsAlt
             evt.Title = updateEvent.Title;
             evt.Description = updateEvent.Description;
             evt.Date = updateEvent.Date;
+            evt.CategoryId = updateEvent.CategoryId;
 
             await context.SaveChangesAsync();
 

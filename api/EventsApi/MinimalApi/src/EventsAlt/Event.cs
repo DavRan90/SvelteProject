@@ -9,6 +9,7 @@ namespace EventsApi.src.EventsAlt
         public string? Description { get; set; }
         public string? Date { get; set; }
         public bool Editing { get; set; }
+        public int? CategoryId { get; set; }
         public Category? Category { get; set; }
     }
 }

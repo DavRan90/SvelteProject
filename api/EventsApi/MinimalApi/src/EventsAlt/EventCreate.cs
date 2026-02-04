@@ -2,6 +2,7 @@
 using EventsApi.src.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MinimalApi.src.Categories;
 
 namespace EventsApi.src.EventsAlt
 {
@@ -29,6 +30,8 @@ namespace EventsApi.src.EventsAlt
             public string Title { get; set; } = string.Empty;
             public string? Description { get; set; }
             public string? Date { get; set; }
+            public int? CategoryId { get; set; }
+            public Category? Category { get; set; }
         }
 
         public class CreateEventHandler
@@ -38,11 +41,21 @@ namespace EventsApi.src.EventsAlt
 
             public async Task<int> Handle(CreateEventRequest request)
             {
+                if (request.CategoryId is not null)
+                {
+                    var exists = await _db.Categories
+                        .AnyAsync(c => c.Id == request.CategoryId);
+
+                    if (!exists)
+                        throw new InvalidOperationException("Category does not exist");
+                }
+
                 var newEvent = new Events.Event
                 {
                     Title = request.Title,
                     Description = request.Description,
-                    Date = request.Date
+                    Date = request.Date,
+                    CategoryId = request.CategoryId
                 };
 
                 _db.Events.Add(newEvent);

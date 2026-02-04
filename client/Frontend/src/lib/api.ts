@@ -10,6 +10,7 @@ export async function createEvent(event: {
   title: string;
   description: string;
   date: string;
+  categoryId: number;
 }) {
   const res = await fetch(`${API_BASE}/events`, {
     method: 'POST',
@@ -29,6 +30,7 @@ export async function updateEvent(
     title: string;
     description: string;
     date: string;
+    categoryId: number;
   }
 ) {
   const res = await fetch(`${API_BASE}/events/${id}`, {
@@ -56,4 +58,10 @@ export async function deleteEvent(id: number) {
   }
 
   return;
+}
+
+export async function getCategories() {
+  const res = await fetch(`${API_BASE}/categories`);
+  if (!res.ok) throw new Error('Failed to load events');
+  return res.json();
 }

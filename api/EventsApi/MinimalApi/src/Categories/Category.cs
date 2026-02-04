@@ -1,4 +1,6 @@
-﻿namespace MinimalApi.src.Categories
+﻿using EventsApi.src.Events;
+
+namespace MinimalApi.src.Categories
 {
     public class Category
     {

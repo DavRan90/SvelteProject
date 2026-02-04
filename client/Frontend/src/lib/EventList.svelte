@@ -1,17 +1,19 @@
 <script lang="ts">
     import EventItem from "./EventItem.svelte";
 
-    interface Event {
+    interface EventDto {
         id: number;
         title: string;
         description: string;
         date: string;
         editing: boolean;
+        categoryId: number;
     }
 
-    export let events: Event[];
+
+    export let events: EventDto[];
     export let onDelete: (id: number) => void;
-    export let onEdit: (id: number, event: Event) => void;
+    export let onEdit: (id: number, event: EventDto) => void;
 
 </script>
 
