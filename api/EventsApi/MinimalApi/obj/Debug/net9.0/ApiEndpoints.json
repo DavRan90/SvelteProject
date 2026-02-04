@@ -1,0 +1,127 @@
+[
+  {
+    "ContainingType": "MinimalApi.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_2",
+    "RelativePath": "db-test",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MinimalApi.src.EventsAlt.EventEndpointsAlt\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEventEndpointsAlt\u003Eb__0_0",
+    "RelativePath": "events/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MinimalApi.src.EventsAlt.EventEndpointsAlt\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEventEndpointsAlt\u003Eb__0_2",
+    "RelativePath": "events/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EventsApi.src.EventsAlt.EventCreate\u002BCreateEventRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MinimalApi.src.EventsAlt.EventEndpointsAlt\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEventEndpointsAlt\u003Eb__0_1",
+    "RelativePath": "events/{id:int}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MinimalApi.src.EventsAlt.EventEndpointsAlt\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEventEndpointsAlt\u003Eb__0_3",
+    "RelativePath": "events/{id:int}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateEvent",
+        "Type": "EventsApi.src.EventsAlt.Event",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MinimalApi.src.EventsAlt.EventEndpointsAlt\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEventEndpointsAlt\u003Eb__0_4",
+    "RelativePath": "events/{id:int}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
