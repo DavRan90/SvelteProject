@@ -32,16 +32,39 @@
     <div class="grid">
         {#if !event.editing}
             <p>{event.title}</p>
-            <button on:click={handleEdit}>✏️</button>
+            <button onclick={handleEdit}>✏️</button>
         {:else}
         <div>
-            <input type="text" bind:value={event.title}/>
+            <form onsubmit={saveEdit}>
+                <div>
+                <label>
+                    Title
+                    <input type="text" bind:value={event.title}/>
+                </label>
+                </div>
+                <div>
+                <label>
+                    Description
+                    <input type="text" bind:value={event.description}/>
+                </label>
+                </div>
+                <div>
+                <label>
+                    Date
+                    <input type="text" bind:value={event.date}/>
+                </label>
+                </div>
+                <div>
+                    <button type="submit">Save</button>
+                </div>
+            </form>
+            <!-- <input type="text" bind:value={event.title}/>
             <input type="text" bind:value={event.description}/>
-            <input type="text" bind:value={event.date}/>
+            <input type="text" bind:value={event.date}/> -->
         </div>
-            <button on:click={saveEdit}>✅</button>
+            <button class="disabled emoji">✏️</button>
         {/if}
-        <button on:click={handleDelete}>🗑️</button>
+        <button onclick={handleDelete} class="emoji">🗑️</button>
     </div>
 </div>
 
@@ -50,6 +73,11 @@
 <style>
     p {
         margin-left: 1em;
+    }
+    button {
+        background-color: aliceblue;
+        border-radius: 5px;
+        padding: 1em;
     }
     input{
         margin: 1em;
@@ -65,12 +93,15 @@
         border-radius: 10px;
         padding: 1em;
     }
-    button{
+    .emoji{
         background-color: aliceblue;
         border-radius: 5px;
         padding: 1em;
         max-width: 4em;
         max-height: 4em;
+    }
+    .disabled{
+        background-color: grey;
     }
 
 </style>

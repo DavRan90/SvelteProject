@@ -74,6 +74,7 @@ namespace MinimalApi
 
             //app.MapGroup("/events").MapEventEndpoints();
             app.MapGroup("/events").MapEventEndpointsAlt();
+            app.MapGroup("/categories").MapCategoryEndpoints();
 
             //app.MapGetEvents();
             //app.MapDeleteEvent();

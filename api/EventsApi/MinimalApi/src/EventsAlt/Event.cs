@@ -1,4 +1,6 @@
-﻿namespace EventsApi.src.EventsAlt
+﻿using MinimalApi.src.Categories;
+
+namespace EventsApi.src.EventsAlt
 {
     public class Event
     {
@@ -7,5 +9,6 @@
         public string? Description { get; set; }
         public string? Date { get; set; }
         public bool Editing { get; set; }
+        public Category? Category { get; set; }
     }
 }

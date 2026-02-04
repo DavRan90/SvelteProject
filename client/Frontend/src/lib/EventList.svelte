@@ -32,7 +32,6 @@
         width: 250px;
         min-height: 250px;
     }
-
     li {
         display: flex;
         gap: 0.5rem;
