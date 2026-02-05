@@ -1,27 +1,23 @@
 <script lang="ts">
-    import EventItem from "./EventItem.svelte";
+    import CategoryItem from "./CategoryItem.svelte";
 
-    interface EventDto {
+    interface Category {
         id: number;
-        title: string;
-        description: string;
-        date: string;
+        name: string;
         editing: boolean;
-        categoryId: number;
     }
 
-
-    export let events: EventDto[];
+    export let categories: Category[];
     export let onDelete: (id: number) => void;
-    export let onEdit: (id: number, event: EventDto) => void;
+    export let onEdit: (id: number, category: Category) => void;
 
 </script>
 
 <div>
     <ul>
-        {#each events as event(event.id)}
+        {#each categories as category(category.id)}
         <li>
-            <EventItem {event} onDelete={onDelete} onEdit={onEdit}/>
+            <CategoryItem {category} onDelete={onDelete} onEdit={onEdit}/>
         </li>
         {/each}
     </ul>

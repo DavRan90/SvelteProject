@@ -65,3 +65,51 @@ export async function getCategories() {
   if (!res.ok) throw new Error('Failed to load events');
   return res.json();
 }
+
+export async function createCategory(category: {
+  name: string;
+}) {
+  const res = await fetch(`${API_BASE}/categories`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(category)
+  });
+
+  if (!res.ok) throw new Error('Failed to create category');
+  return res.json();
+}
+
+export async function updateCategory(
+  id: number,
+  category: {
+    name: string;
+  }
+) {
+  const res = await fetch(`${API_BASE}/categories/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(category)
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to update category');
+  }
+
+  return;
+}
+
+export async function deleteCategory(id: number) {
+  const res = await fetch(`${API_BASE}/categories/${id}`, {
+    method: 'DELETE'
+  });
+
+  if (!res.ok) {
+    throw new Error('Failed to delete category');
+  }
+
+  return;
+}

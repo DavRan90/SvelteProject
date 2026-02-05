@@ -42,15 +42,15 @@
 </script>
 
 
-<div>
-    <div class="grid">
+<div class="grid">
         {#if !event.editing}
-            <p>{event.title}</p>
+            <p onclick={handleEdit}>{event.title}</p>
             <button onclick={handleEdit}>✏️</button>
         {:else}
         <div>
             <form onsubmit={saveEdit}>
                 <div>
+                <h2>Event details:</h2>
                 <label>
                     Title
                     <input type="text" bind:value={event.title}/>
@@ -69,33 +69,25 @@
                 </label>
                 </div>
                 <div>
-                    <label>
-                        Category
-                        <select
-                            bind:value={event.categoryId}
-                            onchange={(e) => {
-                                event.categoryId = Number(e.currentTarget.value);
-                                console.log('categoryId:', event.categoryId, typeof event.categoryId);
-                            }}
-                        >
-                            <option value={null}>No category</option>
-                            {#each categories as category}
-                                <option value={category.id}>
-                                {category.name}
-                                </option>
-                            {/each}
-                            </select>
-                    </label>
+                <label>
+                    Category
+                    <select bind:value={event.categoryId}>
+                    <option value={null}>No category</option>
+
+                    {#each categories as category}
+                        <option value={category.id}>
+                        {category.name}
+                        </option>
+                    {/each}
+                    </select>
+                </label>
                 </div>
-                <div>
-                    <button type="submit">Save</button>
-                </div>
+                <button type="submit">Save</button>
             </form>
         </div>
-            <button class="disabled emoji">✏️</button>
+            <button onclick={handleEdit} class="clicked">✏️</button>
         {/if}
-        <button onclick={handleDelete} class="emoji">🗑️</button>
-    </div>
+        <button onclick={handleDelete}>🗑️</button>
 </div>
 
 
@@ -104,24 +96,31 @@
     p {
         margin-left: 1em;
     }
+    input, select {
+        margin-top: 0.5rem;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+    }
     button {
-        background-color: aliceblue;
-        border-radius: 5px;
-        padding: 1em;
+        padding: 1rem;
+        min-width: 4em;
+        min-height: 4em;
+        max-height: 4em;
+        border-radius: 6px;
+        border: none;
+        background: #4f46e5;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
     }
-    input{
-        margin: 1em;
+    button:hover {
+        background: #4338ca;
     }
-
     .grid{
         display: grid;
-		grid-template-columns: 15em 3em 3em;
+		grid-template-columns: 30em 4em 4em;
 		grid-gap: 1em;
 		height: 100%;
-    }
-    input{
-        border-radius: 10px;
-        padding: 1em;
     }
     .emoji{
         background-color: aliceblue;
@@ -130,7 +129,7 @@
         max-width: 4em;
         max-height: 4em;
     }
-    .disabled{
+    .clicked{
         background-color: grey;
     }
 

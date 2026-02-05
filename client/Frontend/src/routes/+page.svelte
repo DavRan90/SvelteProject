@@ -12,8 +12,13 @@
         categoryId: number;
     }
 
+    interface Category {
+        id: number;
+        name: string;
+    }
+
+    let categories: Category[] = $state([]);
     let events = $state([]);
-    let categories = $state([]);
     let selectedCategoryId = $state(0);
     let newEvent = $state({title: "Default title", description: "Default Description", date: "1970-05-01", categoryId: 0});
         
@@ -48,11 +53,10 @@
         }
 </script>
 
-
 <div class="grid">
-  <h2>Event details:</h2>
   <form onsubmit={addEvent}>
     <div>
+      <h2>New event details:</h2>
       <label>
         Title
         <input type="text" bind:value={newEvent.title}/>
@@ -94,12 +98,6 @@
 </div>
 
 <style>
-  body {
-    font-family: system-ui, sans-serif;
-    background: #f6f7f9;
-    color: #222;
-  }
-
   h1, h2 {
     margin-bottom: 0.5rem;
   }
@@ -150,22 +148,5 @@
 
   button:hover {
     background: #4338ca;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    max-width: 600px;
-  }
-
-  li {
-    background: white;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 </style>
