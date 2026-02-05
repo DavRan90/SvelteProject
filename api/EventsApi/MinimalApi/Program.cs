@@ -5,6 +5,7 @@ using MinimalApi.src.Events;
 using EventsApi.Events;
 using Scalar.AspNetCore;
 using MinimalApi.src.EventsAlt;
+using MinimalApi.src._internal;
 
 
 namespace MinimalApi
@@ -72,18 +73,14 @@ namespace MinimalApi
 
             app.UseAuthorization();
 
-            app.MapGroup("/events")
-                .WithTags("Events")
-                .MapEventEndpointsAlt();
-            app.MapGroup("/categories")
-                .WithTags("Categories")
-                .MapCategoryEndpoints();
+            app.MapEndpoints<Program>();
 
-            //app.MapGroup("/events").MapEventEndpoints();
-
-            //app.MapGetEvents();
-            //app.MapDeleteEvent();
-            //app.MapUpdateEvent();
+            //app.MapGroup("/events")
+            //    .WithTags("Events")
+            //    .MapEventEndpointsAlt();
+            //app.MapGroup("/categories")
+            //    .WithTags("Categories")
+            //    .MapCategoryEndpoints();
 
             app.Run();
         }

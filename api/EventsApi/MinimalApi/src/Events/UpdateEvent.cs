@@ -1,29 +1,30 @@
 using EventsApi.src.Data;
 using EventsApi.src.Events;
 using Microsoft.EntityFrameworkCore;
+using MinimalApi.src._internal;
 
 namespace MinimalApi.src.Events
 {
-    public static class UpdateEvent
+    public class UpdateEvent : IEndpoint
     {
-        public static WebApplication MapUpdateEvent(this WebApplication app)
+        public static void MapEndpoint(IEndpointRouteBuilder app) => app
+            .MapPut("/events/{id}", Handle)
+            .WithTags("Events");
+
+        private static async Task<IResult> Handle(AppDbContext context, int id, Event updateEvent)
         {
-            app.MapPut("/events/{id:int}", async (AppDbContext context, int id, Event updateEvent) =>
-            {
-                var ev = await context.Events.FindAsync(id);
-                if (ev is null)
-                    return Results.NotFound();
+            var evt = await context.Events.FindAsync(id);
+            if (evt is null)
+                return Results.NotFound();
 
-                ev.Title = updateEvent.Title;
-                ev.Description = updateEvent.Description;
-                ev.Date = updateEvent.Date;
-                
-                await context.SaveChangesAsync();
+            evt.Title = updateEvent.Title;
+            evt.Description = updateEvent.Description;
+            evt.Date = updateEvent.Date;
+            evt.CategoryId = updateEvent.CategoryId;
 
-                return Results.NoContent();
-            });
+            await context.SaveChangesAsync();
 
-            return app;
+            return Results.NoContent();
         }
     }
 }

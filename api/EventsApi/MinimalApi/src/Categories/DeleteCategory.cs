@@ -5,19 +5,19 @@ using System.Reflection.Metadata;
 
 namespace MinimalApi.src.Events
 {
-    public class DeleteEvent : IEndpoint
+    public class DeleteCategory : IEndpoint
     {
         public static void MapEndpoint(IEndpointRouteBuilder app) => app
-            .MapDelete("/events/{id}", Handle)
-            .WithTags("Events");
+            .MapDelete("/categories/{id}", Handle)
+            .WithTags("Categories");
 
         private static async Task<IResult> Handle(AppDbContext context, int id)
         {
-            var evt = await context.Events.FindAsync(id);
-            if (evt is null)
+            var category = await context.Categories.FindAsync(id);
+            if (category is null)
                 return Results.NotFound();
 
-            context.Events.Remove(evt);
+            context.Categories.Remove(category);
             await context.SaveChangesAsync();
 
             return Results.NoContent();

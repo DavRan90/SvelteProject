@@ -1,6 +1,6 @@
 ﻿using EventsApi.src.Events;
 
-namespace MinimalApi.src.CategoriesAlt
+namespace MinimalApi.src.Categories
 {
     public class Category
     {

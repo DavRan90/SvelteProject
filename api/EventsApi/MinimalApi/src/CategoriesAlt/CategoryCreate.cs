@@ -34,7 +34,7 @@ namespace EventsApi.src.EventsAlt
                 _context.Categories.Add(newCategory);
                 await _context.SaveChangesAsync();
 
-                return newCategory.Id; // returns the new event's Id
+                return newCategory.Id;
             }
         }
     }

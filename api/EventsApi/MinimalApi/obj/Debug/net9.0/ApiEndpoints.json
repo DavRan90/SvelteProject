@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "MinimalApi.src.Events.CategoryEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapCategoryEndpoints\u003Eb__0_0",
-    "RelativePath": "categories/",
+    "ContainingType": "GetCategories",
+    "Method": "Handle",
+    "RelativePath": "categories",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -19,23 +19,25 @@
     ]
   },
   {
-    "ContainingType": "MinimalApi.src.Events.CategoryEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapCategoryEndpoints\u003Eb__0_2",
-    "RelativePath": "categories/",
+    "ContainingType": "EventsApi.src.Events.CreateCategory",
+    "Method": "Handle",
+    "RelativePath": "categories",
     "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "EventsApi.src.EventsAlt.CategoryCreate\u002BCreateCategoryRequest",
+        "Type": "EventsApi.src.Events.CreateCategory\u002BCreateCategoryRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
         "StatusCode": 200
       }
     ],
@@ -44,9 +46,9 @@
     ]
   },
   {
-    "ContainingType": "MinimalApi.src.Events.CategoryEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapCategoryEndpoints\u003Eb__0_1",
-    "RelativePath": "categories/{id:int}",
+    "ContainingType": "GetCategory",
+    "Method": "Handle",
+    "RelativePath": "categories/{id}",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -69,21 +71,16 @@
     ]
   },
   {
-    "ContainingType": "MinimalApi.src.Events.CategoryEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapCategoryEndpoints\u003Eb__0_3",
-    "RelativePath": "categories/{id:int}",
-    "HttpMethod": "PUT",
+    "ContainingType": "MinimalApi.src.Events.DeleteCategory",
+    "Method": "Handle",
+    "RelativePath": "categories/{id}",
+    "HttpMethod": "DELETE",
     "IsController": false,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "updateCategory",
-        "Type": "MinimalApi.src.Categories.Category",
         "IsRequired": true
       }
     ],
@@ -99,16 +96,21 @@
     ]
   },
   {
-    "ContainingType": "MinimalApi.src.Events.CategoryEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapCategoryEndpoints\u003Eb__0_4",
-    "RelativePath": "categories/{id:int}",
-    "HttpMethod": "DELETE",
+    "ContainingType": "MinimalApi.src.Events.UpdateCategory",
+    "Method": "Handle",
+    "RelativePath": "categories/{id}",
+    "HttpMethod": "PUT",
     "IsController": false,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateCategory",
+        "Type": "MinimalApi.src.CategoriesAlt.Category",
         "IsRequired": true
       }
     ],
@@ -140,9 +142,9 @@
     ]
   },
   {
-    "ContainingType": "MinimalApi.src.EventsAlt.EventEndpointsAlt\u002B\u003C\u003Ec",
-    "Method": "\u003CMapEventEndpointsAlt\u003Eb__0_0",
-    "RelativePath": "events/",
+    "ContainingType": "GetEvents",
+    "Method": "Handle",
+    "RelativePath": "events",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -159,23 +161,25 @@
     ]
   },
   {
-    "ContainingType": "MinimalApi.src.EventsAlt.EventEndpointsAlt\u002B\u003C\u003Ec",
-    "Method": "\u003CMapEventEndpointsAlt\u003Eb__0_2",
-    "RelativePath": "events/",
+    "ContainingType": "EventsApi.src.Events.CreateEvent",
+    "Method": "Handle",
+    "RelativePath": "events",
     "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "EventsApi.src.EventsAlt.EventCreate\u002BCreateEventRequest",
+        "Type": "EventsApi.src.Events.CreateEvent\u002BCreateEventRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "application/json"
+        ],
         "StatusCode": 200
       }
     ],
@@ -184,10 +188,10 @@
     ]
   },
   {
-    "ContainingType": "MinimalApi.src.EventsAlt.EventEndpointsAlt\u002B\u003C\u003Ec",
-    "Method": "\u003CMapEventEndpointsAlt\u003Eb__0_1",
-    "RelativePath": "events/{id:int}",
-    "HttpMethod": "GET",
+    "ContainingType": "MinimalApi.src.Events.DeleteEvent",
+    "Method": "Handle",
+    "RelativePath": "events/{id}",
+    "HttpMethod": "DELETE",
     "IsController": false,
     "Order": 0,
     "Parameters": [
@@ -209,9 +213,9 @@
     ]
   },
   {
-    "ContainingType": "MinimalApi.src.EventsAlt.EventEndpointsAlt\u002B\u003C\u003Ec",
-    "Method": "\u003CMapEventEndpointsAlt\u003Eb__0_3",
-    "RelativePath": "events/{id:int}",
+    "ContainingType": "MinimalApi.src.Events.UpdateEvent",
+    "Method": "Handle",
+    "RelativePath": "events/{id}",
     "HttpMethod": "PUT",
     "IsController": false,
     "Order": 0,
@@ -223,7 +227,7 @@
       },
       {
         "Name": "updateEvent",
-        "Type": "EventsApi.src.EventsAlt.Event",
+        "Type": "EventsApi.src.Events.Event",
         "IsRequired": true
       }
     ],
@@ -239,10 +243,10 @@
     ]
   },
   {
-    "ContainingType": "MinimalApi.src.EventsAlt.EventEndpointsAlt\u002B\u003C\u003Ec",
-    "Method": "\u003CMapEventEndpointsAlt\u003Eb__0_4",
-    "RelativePath": "events/{id:int}",
-    "HttpMethod": "DELETE",
+    "ContainingType": "MinimalApi.src.EventsAlt.GetEvent",
+    "Method": "Handle",
+    "RelativePath": "events/{id}",
+    "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
     "Parameters": [

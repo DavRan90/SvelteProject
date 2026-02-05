@@ -2,15 +2,15 @@
 using Microsoft.EntityFrameworkCore;
 using MinimalApi.src._internal;
 
-public class GetEvents : IEndpoint
+public class GetCategories : IEndpoint
 {
     public static void MapEndpoint(IEndpointRouteBuilder app) => app
-        .MapGet("/events", Handle)
-        .WithTags("Events");
+        .MapGet("/categories", Handle)
+        .WithTags("Categories");
 
     private static async Task<IResult> Handle(AppDbContext context)
     {
-        var evts = await context.Events.OrderBy(e => e.Id).ToListAsync();
-        return Results.Ok(evts);
+        var categories = await context.Categories.OrderBy(c => c.Id).ToListAsync();
+        return Results.Ok(categories);
     }
 }
