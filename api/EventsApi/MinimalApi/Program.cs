@@ -72,9 +72,14 @@ namespace MinimalApi
 
             app.UseAuthorization();
 
+            app.MapGroup("/events")
+                .WithTags("Events")
+                .MapEventEndpointsAlt();
+            app.MapGroup("/categories")
+                .WithTags("Categories")
+                .MapCategoryEndpoints();
+
             //app.MapGroup("/events").MapEventEndpoints();
-            app.MapGroup("/events").MapEventEndpointsAlt();
-            app.MapGroup("/categories").MapCategoryEndpoints();
 
             //app.MapGetEvents();
             //app.MapDeleteEvent();

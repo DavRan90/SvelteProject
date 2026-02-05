@@ -15,13 +15,20 @@
     export let onDelete: (id: number) => void;
     export let onEdit: (id: number, event: EventDto) => void;
 
+    let editingEventId: number | null = null;
+
 </script>
 
 <div>
     <ul>
         {#each events as event(event.id)}
         <li>
-            <EventItem {event} onDelete={onDelete} onEdit={onEdit}/>
+            <EventItem 
+                {event}
+                editing={editingEventId === event.id}
+                onEditStart={() => editingEventId = event.id}
+                onEditDone={() => editingEventId = null}
+                onDelete={onDelete} onEdit={onEdit}/>
         </li>
         {/each}
     </ul>

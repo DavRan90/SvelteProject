@@ -14,17 +14,6 @@ namespace EventsApi.src.EventsAlt
             var id = await handler.Handle(request);
             return Results.Created($"/events/{id}", new { Id = id });
         }
-        public static WebApplication MapCreateEventAlt(this WebApplication app)
-        {
-            app.MapPost("/events", async (CreateCategoryRequest request, AppDbContext db) =>
-            {
-                var handler = new CreateCategoryHandler(db);
-                var id = await handler.Handle(request);
-                return Results.Created($"/events/{id}", new { Id = id });
-            });
-
-            return app;
-        }
         public class CreateCategoryRequest
         {
             public string Name { get; set; } = string.Empty;
@@ -32,8 +21,8 @@ namespace EventsApi.src.EventsAlt
 
         public class CreateCategoryHandler
         {
-            private readonly AppDbContext _db;
-            public CreateCategoryHandler(AppDbContext db) => _db = db;
+            private readonly AppDbContext _context;
+            public CreateCategoryHandler(AppDbContext context) => _context = context;
 
             public async Task<int> Handle(CreateCategoryRequest request)
             {
@@ -42,8 +31,8 @@ namespace EventsApi.src.EventsAlt
                     Name = request.Name,
                 };
 
-                _db.Categories.Add(newCategory);
-                await _db.SaveChangesAsync();
+                _context.Categories.Add(newCategory);
+                await _context.SaveChangesAsync();
 
                 return newCategory.Id; // returns the new event's Id
             }

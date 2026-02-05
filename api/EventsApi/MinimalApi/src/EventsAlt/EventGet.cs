@@ -10,7 +10,7 @@ namespace MinimalApi.src.EventsAlt
         {
             if (id == 0)
             {
-                var evts = await context.Events.ToListAsync();
+                var evts = await context.Events.OrderBy(e => e.Id).ToListAsync();
                 return Results.Ok(evts);
             }
             else

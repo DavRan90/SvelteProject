@@ -20,17 +20,23 @@
     export let onDelete: (id: number) => void;
     export let onEdit: (id: number, event: EventDto) => void;
 
+    export let editing: boolean;
+	export let onEditStart: () => void;
+	export let onEditDone: () => void;
+
     function handleDelete(){
         onDelete(event.id);
     }
 
     function handleEdit(){
-        event.editing = !event.editing;
+        editing = !editing;
+        onEditStart();
     }
 
     function saveEdit(){
         event.editing = !event.editing;
         onEdit(event.id, event);
+        onEditDone();
     }
 
     let categories: Category[] = [];
@@ -43,14 +49,13 @@
 
 
 <div class="grid">
-        {#if !event.editing}
+        {#if !editing}
             <p onclick={handleEdit}>{event.title}</p>
             <button onclick={handleEdit}>✏️</button>
         {:else}
         <div>
             <form onsubmit={saveEdit}>
                 <div>
-                <h2>Event details:</h2>
                 <label>
                     Title
                     <input type="text" bind:value={event.title}/>
@@ -118,7 +123,7 @@
     }
     .grid{
         display: grid;
-		grid-template-columns: 30em 4em 4em;
+		grid-template-columns: 28em 4em 4em;
 		grid-gap: 1em;
 		height: 100%;
     }

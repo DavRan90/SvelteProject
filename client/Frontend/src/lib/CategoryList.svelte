@@ -4,22 +4,29 @@
     interface Category {
         id: number;
         name: string;
-        editing: boolean;
     }
 
     export let categories: Category[];
     export let onDelete: (id: number) => void;
     export let onEdit: (id: number, category: Category) => void;
 
+    let editingCategoryId: number | null = null;
+
 </script>
 
 <div>
     <ul>
-        {#each categories as category(category.id)}
+        {#each categories as category (category.id)}
         <li>
-            <CategoryItem {category} onDelete={onDelete} onEdit={onEdit}/>
+	    <CategoryItem
+            {category}
+            editing={editingCategoryId === category.id}
+            onEditStart={() => editingCategoryId = category.id}
+            onEditDone={() => editingCategoryId = null}
+            onDelete={onDelete} onEdit={onEdit}
+	    />
         </li>
-        {/each}
+{/each}
     </ul>
 </div>
 

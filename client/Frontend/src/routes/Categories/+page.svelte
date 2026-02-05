@@ -6,13 +6,10 @@
     interface Category {
         id: number;
         name: string;
-        editing: boolean;
     }
 
     let categories: Category[] = $state([]);
-    let selectedCategoryId = $state(0);
     let newCategory = $state({name: "New Category"});
-    let editName: boolean = $state(false);
 
 
     onMount(async () => {
@@ -26,13 +23,6 @@
             categories = await getCategories();
             newCategory = {name: ""}
         }
-    function toggleEdit() {
-        editName = !editName;
-    }
-    function saveName() {
-        editName = !editName;
-    }
-
     async function onDelete(id: number){
         await deleteCategory(id);
         categories = await getCategories();

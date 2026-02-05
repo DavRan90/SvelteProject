@@ -2,7 +2,6 @@
     interface Category {
         id: number;
         name: string;
-        editing: boolean;
     }
 
     import { getCategories } from '$lib/api';
@@ -12,17 +11,24 @@
     export let onDelete: (id: number) => void;
     export let onEdit: (id: number, category: Category) => void;
 
+    export let editing: boolean;
+	export let onEditStart: () => void;
+	export let onEditDone: () => void;
+    
+
     function handleDelete(){
         onDelete(category.id);
     }
 
     function handleEdit(){
-        category.editing = !category.editing;
+        editing = !editing;
+        onEditStart();
     }
 
     function saveEdit(){
-        category.editing = !category.editing;
+        editing = !editing;
         onEdit(category.id, category);
+        onEditDone();
     }
 
     let categories: Category[] = [];
@@ -34,15 +40,17 @@
 </script>
 
 <div class="categories">
-    {#if !category.editing}
-        <label onclick={handleEdit}>{category.name}</label>
-    {:else}
-        <input 
+    {#if !editing}
+		<label onclick={handleEdit}>
+			{category.name}
+		</label>
+	{:else}
+		<input 
         type="text" 
         bind:value={category.name}
         onkeydown={(e) => e.key === 'Enter' && saveEdit()}
         >
-    {/if}
+	{/if}
     <button onclick={handleDelete}>🗑️</button>
 </div>
 
@@ -52,7 +60,7 @@
     }
     .categories{
         display: grid;
-		grid-template-columns: 30em 4em 4em;
+		grid-template-columns: 28em 4em 4em;
 		grid-gap: 1em;
 		height: 100%;
     }

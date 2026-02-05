@@ -1,6 +1,7 @@
 ﻿using EventsApi.src.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MinimalApi.src.Categories;
 
 namespace MinimalApi.src.EventsAlt
 {
@@ -10,14 +11,14 @@ namespace MinimalApi.src.EventsAlt
         {
             if (id == 0)
             {
-                var evts = await context.Categories.ToListAsync();
-                return Results.Ok(evts);
+                var categories = await context.Categories.OrderBy(c => c.Id).ToListAsync();
+                return Results.Ok(categories);
             }
             else
             {
-                var ev = await context.Categories.FindAsync(id);
-                return ev is not null
-                    ? Results.Ok(ev)
+                var category = await context.Categories.FindAsync(id);
+                return category is not null
+                    ? Results.Ok(category)
                     : Results.NotFound();
             }
         }

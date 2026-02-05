@@ -14,17 +14,6 @@ namespace EventsApi.src.EventsAlt
             var id = await handler.Handle(request);
             return Results.Created($"/events/{id}", new { Id = id });
         }
-        public static WebApplication MapCreateEventAlt(this WebApplication app)
-        {
-            app.MapPost("/events", async (CreateEventRequest request, AppDbContext db) =>
-            {
-                var handler = new CreateEventHandler(db);
-                var id = await handler.Handle(request);
-                return Results.Created($"/events/{id}", new { Id = id });
-            });
-
-            return app;
-        }
         public class CreateEventRequest
         {
             public string Title { get; set; } = string.Empty;
@@ -36,14 +25,14 @@ namespace EventsApi.src.EventsAlt
 
         public class CreateEventHandler
         {
-            private readonly AppDbContext _db;
-            public CreateEventHandler(AppDbContext db) => _db = db;
+            private readonly AppDbContext _context;
+            public CreateEventHandler(AppDbContext context) => _context = context;
 
             public async Task<int> Handle(CreateEventRequest request)
             {
                 if (request.CategoryId is not null)
                 {
-                    var exists = await _db.Categories
+                    var exists = await _context.Categories
                         .AnyAsync(c => c.Id == request.CategoryId);
 
                     if (!exists)
@@ -58,10 +47,10 @@ namespace EventsApi.src.EventsAlt
                     CategoryId = request.CategoryId
                 };
 
-                _db.Events.Add(newEvent);
-                await _db.SaveChangesAsync();
+                _context.Events.Add(newEvent);
+                await _context.SaveChangesAsync();
 
-                return newEvent.Id; // returns the new event's Id
+                return newEvent.Id;
             }
         }
     }

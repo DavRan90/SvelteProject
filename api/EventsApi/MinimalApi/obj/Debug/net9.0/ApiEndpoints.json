@@ -13,6 +13,9 @@
         "MediaTypes": [],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Categories"
     ]
   },
   {
@@ -35,6 +38,9 @@
         "MediaTypes": [],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Categories"
     ]
   },
   {
@@ -57,6 +63,9 @@
         "MediaTypes": [],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Categories"
     ]
   },
   {
@@ -84,6 +93,9 @@
         "MediaTypes": [],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Categories"
     ]
   },
   {
@@ -106,6 +118,9 @@
         "MediaTypes": [],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Categories"
     ]
   },
   {
@@ -138,6 +153,9 @@
         "MediaTypes": [],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Events"
     ]
   },
   {
@@ -160,6 +178,9 @@
         "MediaTypes": [],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Events"
     ]
   },
   {
@@ -182,6 +203,9 @@
         "MediaTypes": [],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Events"
     ]
   },
   {
@@ -209,6 +233,9 @@
         "MediaTypes": [],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Events"
     ]
   },
   {
@@ -231,6 +258,9 @@
         "MediaTypes": [],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Events"
     ]
   }
 ]
