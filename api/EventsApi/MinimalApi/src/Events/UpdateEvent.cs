@@ -1,3 +1,4 @@
+using Azure.Core;
 using EventsApi.src.Data;
 using EventsApi.src.Events;
 using Microsoft.EntityFrameworkCore;
@@ -24,7 +25,9 @@ namespace MinimalApi.src.Events
 
             evt.Title = updateEvent.Title;
             evt.Description = updateEvent.Description;
-            evt.Date = updateEvent.Date;
+            evt.Date = updateEvent.Date is null
+                ? null
+                : DateTime.SpecifyKind(updateEvent.Date.Value, DateTimeKind.Utc);
             evt.CategoryId = updateEvent.CategoryId;
 
             await context.SaveChangesAsync();

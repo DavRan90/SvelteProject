@@ -18,7 +18,7 @@ namespace EventsApi.src.EventsAlt
         {
             public string Title { get; set; } = string.Empty;
             public string? Description { get; set; }
-            public string? Date { get; set; }
+            public DateTime? Date { get; set; }
             public int? CategoryId { get; set; }
             public Category? Category { get; set; }
         }

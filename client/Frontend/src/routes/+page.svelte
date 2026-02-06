@@ -18,9 +18,9 @@
     }
 
     let categories: Category[] = $state([]);
-    let events = $state([]);
+    let events: EventDto[] = $state([]);
     let selectedCategoryId = $state(0);
-    let newEvent = $state({title: "New event", description: "Event Description", date: "2026-02-06", categoryId: 0});
+    let newEvent = $state({title: "New event", description: "Event Description", date: "2026-02-01T12:00", categoryId: 0});
         
     onMount(async () => {
     events = await getEvents();
@@ -35,6 +35,7 @@
                 });
             events = await getEvents();
             newEvent = {title: "", description: "", date: "", categoryId: 0}
+            selectedCategoryId = 0;
         }
 
         async function onDelete(id: number){
@@ -71,7 +72,7 @@
     <div>
       <label>
         Date
-        <input type="text" bind:value={newEvent.date}/>
+        <input type="datetime-local" bind:value={newEvent.date}/>
       </label>
     </div>
     <div>
@@ -98,7 +99,7 @@
 </div>
 
 <style>
-  h1, h2 {
+  h2 {
     margin-bottom: 0.5rem;
   }
 

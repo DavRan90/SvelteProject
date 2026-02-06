@@ -24,6 +24,10 @@
 	export let onEditStart: () => void;
 	export let onEditDone: () => void;
 
+    let formattedDate = event.date
+    ? event.date.substring(0, 16) // YYYY-MM-DDTHH:mm
+    : '';
+
     function handleDelete(){
         onDelete(event.id);
     }
@@ -34,6 +38,7 @@
     }
 
     function saveEdit(){
+        event.date = formattedDate;
         event.editing = !event.editing;
         onEdit(event.id, event);
         onEditDone();
@@ -70,7 +75,7 @@
                 <div>
                 <label>
                     Date
-                    <input type="text" bind:value={event.date}/>
+                    <input type="datetime-local" bind:value={formattedDate}/>
                 </label>
                 </div>
                 <div>

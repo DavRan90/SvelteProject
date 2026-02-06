@@ -23,10 +23,19 @@
             categories = await getCategories();
             newCategory = {name: ""}
         }
-    async function onDelete(id: number){
+    async function onDelete(id: number) {
+      try {
         await deleteCategory(id);
         categories = await getCategories();
+      } catch (err) {
+        if (err instanceof Error) {
+          alert(err.message);
+        } else {
+          alert('Something went wrong');
+        }
+      }
     }
+
     async function onUpdate(id: number, category: Category) {
         await updateCategory(id, {
         name: category.name,
@@ -35,6 +44,7 @@
     }
 
 </script>
+
 
 <div class="grid">
   <form onsubmit={addCategory}>
@@ -56,13 +66,8 @@
 
 
 <style>
-    body {
-    font-family: system-ui, sans-serif;
-    background: #f6f7f9;
-    color: #222;
-  }
 
-  h1, h2 {
+  h2 {
     margin-bottom: 0.5rem;
   }
 

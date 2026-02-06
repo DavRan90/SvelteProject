@@ -107,9 +107,12 @@ export async function deleteCategory(id: number) {
     method: 'DELETE'
   });
 
+  if (res.status === 409) {
+    const body = await res.json();
+    throw new Error(body.message);
+  }
+
   if (!res.ok) {
     throw new Error('Failed to delete category');
   }
-
-  return;
 }
