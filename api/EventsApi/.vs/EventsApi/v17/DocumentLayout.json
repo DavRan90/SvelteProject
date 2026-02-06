@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\categoriesalt\\categoryendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\categoriesalt\\categoryendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\categories\\getcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\categories\\getcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\events\\createevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\events\\createevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\categoriesalt\\categoryget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\categoriesalt\\categoryget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\events\\deleteevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\events\\deleteevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\categories\\getcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\categories\\getcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\events\\getevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\events\\getevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\categories\\updatecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\categories\\updatecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\events\\getevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\events\\getevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\categoriesalt\\categoryupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\categoriesalt\\categoryupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\events\\updateevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\events\\updateevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\categories\\deletecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\categories\\deletecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\categories\\createcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\categories\\createcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|c:\\users\\david\\events\\src\\api\\eventsapi\\minimalapi\\src\\eventsalt\\eventget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26E6D823-1A75-4272-811B-26DC3DCF67A8}|MinimalApi\\MinimalApi.csproj|solutionrelative:minimalapi\\src\\eventsalt\\eventget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,105 +63,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\Program.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\Program.cs",
-              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\Program.cs",
-              "RelativeToolTip": "MinimalApi\\Program.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAgwBQAAAA+AAAAAAAAAA==",
+              "Title": "CategoryEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\CategoriesAlt\\CategoryEndpoints.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\src\\CategoriesAlt\\CategoryEndpoints.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\CategoriesAlt\\CategoryEndpoints.cs",
+              "RelativeToolTip": "MinimalApi\\src\\CategoriesAlt\\CategoryEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T15:13:11.195Z",
+              "WhenOpened": "2026-02-06T08:33:31.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GetCategories.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Categories\\GetCategories.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\src\\Categories\\GetCategories.cs",
-              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Categories\\GetCategories.cs",
-              "RelativeToolTip": "MinimalApi\\src\\Categories\\GetCategories.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\Program.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\Program.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\Program.cs",
+              "RelativeToolTip": "MinimalApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T15:11:46.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryGet.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\CategoriesAlt\\CategoryGet.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\src\\CategoriesAlt\\CategoryGet.cs",
-              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\CategoriesAlt\\CategoryGet.cs",
-              "RelativeToolTip": "MinimalApi\\src\\CategoriesAlt\\CategoryGet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T15:11:03.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetCategory.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Categories\\GetCategory.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\src\\Categories\\GetCategory.cs",
-              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Categories\\GetCategory.cs",
-              "RelativeToolTip": "MinimalApi\\src\\Categories\\GetCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T15:10:19.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoryUpdate.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\CategoriesAlt\\CategoryUpdate.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\src\\CategoriesAlt\\CategoryUpdate.cs",
-              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\CategoriesAlt\\CategoryUpdate.cs",
-              "RelativeToolTip": "MinimalApi\\src\\CategoriesAlt\\CategoryUpdate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T15:09:34.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateCategory.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Categories\\UpdateCategory.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\src\\Categories\\UpdateCategory.cs",
-              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Categories\\UpdateCategory.cs",
-              "RelativeToolTip": "MinimalApi\\src\\Categories\\UpdateCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T15:09:07.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DeleteCategory.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Categories\\DeleteCategory.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\src\\Categories\\DeleteCategory.cs",
-              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Categories\\DeleteCategory.cs",
-              "RelativeToolTip": "MinimalApi\\src\\Categories\\DeleteCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T15:08:04.308Z",
+              "WhenOpened": "2026-02-06T08:33:17.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "CreateCategory.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Categories\\CreateCategory.cs",
-              "RelativeDocumentMoniker": "MinimalApi\\src\\Categories\\CreateCategory.cs",
-              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Categories\\CreateCategory.cs",
-              "RelativeToolTip": "MinimalApi\\src\\Categories\\CreateCategory.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAowAkAAAAFAAAAAAAAAA==",
+              "Title": "EventGet.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventGet.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\src\\EventsAlt\\EventGet.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\EventsAlt\\EventGet.cs",
+              "RelativeToolTip": "MinimalApi\\src\\EventsAlt\\EventGet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T15:03:47.275Z",
+              "WhenOpened": "2026-02-06T07:59:47.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateEvent.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Events\\UpdateEvent.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\src\\Events\\UpdateEvent.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Events\\UpdateEvent.cs",
+              "RelativeToolTip": "MinimalApi\\src\\Events\\UpdateEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T07:57:40.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetEvent.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Events\\GetEvent.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\src\\Events\\GetEvent.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Events\\GetEvent.cs",
+              "RelativeToolTip": "MinimalApi\\src\\Events\\GetEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T07:56:56.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetEvents.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Events\\GetEvents.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\src\\Events\\GetEvents.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Events\\GetEvents.cs",
+              "RelativeToolTip": "MinimalApi\\src\\Events\\GetEvents.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T07:54:52.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateEvent.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Events\\CreateEvent.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\src\\Events\\CreateEvent.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Events\\CreateEvent.cs",
+              "RelativeToolTip": "MinimalApi\\src\\Events\\CreateEvent.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T07:54:11.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeleteEvent.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Events\\DeleteEvent.cs",
+              "RelativeDocumentMoniker": "MinimalApi\\src\\Events\\DeleteEvent.cs",
+              "ToolTip": "C:\\Users\\david\\Events\\src\\api\\EventsApi\\MinimalApi\\src\\Events\\DeleteEvent.cs",
+              "RelativeToolTip": "MinimalApi\\src\\Events\\DeleteEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T07:50:58.159Z",
               "EditorCaption": ""
             }
           ]

@@ -2,7 +2,6 @@ using EventsApi.src.Data;
 using Npgsql;
 using Microsoft.EntityFrameworkCore;
 using MinimalApi.src.Events;
-using EventsApi.Events;
 using Scalar.AspNetCore;
 using MinimalApi.src.EventsAlt;
 using MinimalApi.src._internal;

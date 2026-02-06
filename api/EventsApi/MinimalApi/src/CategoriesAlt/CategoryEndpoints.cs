@@ -1,5 +1,4 @@
-﻿using EventsApi.Events;
-using EventsApi.src.Data;
+﻿using EventsApi.src.Data;
 using EventsApi.src.Events;
 using EventsApi.src.EventsAlt;
 using Microsoft.EntityFrameworkCore;

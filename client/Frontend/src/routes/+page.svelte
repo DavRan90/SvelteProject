@@ -20,7 +20,7 @@
     let categories: Category[] = $state([]);
     let events = $state([]);
     let selectedCategoryId = $state(0);
-    let newEvent = $state({title: "Default title", description: "Default Description", date: "1970-05-01", categoryId: 0});
+    let newEvent = $state({title: "New event", description: "Event Description", date: "2026-02-06", categoryId: 0});
         
     onMount(async () => {
     events = await getEvents();

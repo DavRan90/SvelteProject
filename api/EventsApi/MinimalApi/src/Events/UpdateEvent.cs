@@ -1,6 +1,7 @@
 using EventsApi.src.Data;
 using EventsApi.src.Events;
 using Microsoft.EntityFrameworkCore;
+using MinimalApi.Config;
 using MinimalApi.src._internal;
 
 namespace MinimalApi.src.Events
@@ -9,6 +10,10 @@ namespace MinimalApi.src.Events
     {
         public static void MapEndpoint(IEndpointRouteBuilder app) => app
             .MapPut("/events/{id}", Handle)
+            .WithApiDocumentation(
+            "UpdateEvent",
+            "Update event",
+            "Update event by id.")
             .WithTags("Events");
 
         private static async Task<IResult> Handle(AppDbContext context, int id, Event updateEvent)

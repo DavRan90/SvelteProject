@@ -1,6 +1,7 @@
 ﻿using Azure;
 using EventsApi.src.Data;
 using Microsoft.EntityFrameworkCore;
+using MinimalApi.Config;
 using MinimalApi.src._internal;
 using MinimalApi.src.Categories;
 
@@ -10,6 +11,10 @@ namespace EventsApi.src.Events
     {
         public static void MapEndpoint(IEndpointRouteBuilder app) => app
             .MapPost("/events", Handle)
+            .WithApiDocumentation(
+            "CreateEvent",
+            "Create event",
+            "Create an event.")
             .WithTags("Events");
 
         public class CreateEventRequest
@@ -21,7 +26,7 @@ namespace EventsApi.src.Events
             public Category? Category { get; set; }
         }
 
-        private static async Task<int> Handle(AppDbContext context, CreateEventRequest request)
+        private static async Task<IResult> Handle(AppDbContext context, CreateEventRequest request)
         {
             if (request.CategoryId is not null)
             {
@@ -29,7 +34,7 @@ namespace EventsApi.src.Events
                     .AnyAsync(c => c.Id == request.CategoryId);
 
                 if (!exists)
-                    throw new InvalidOperationException("Category does not exist");
+                    Results.NotFound();
             }
 
             var newEvent = new Event
@@ -43,7 +48,7 @@ namespace EventsApi.src.Events
             context.Events.Add(newEvent);
             await context.SaveChangesAsync();
 
-            return newEvent.Id;
+            return Results.Ok(newEvent.Id);
         }
     }
 }

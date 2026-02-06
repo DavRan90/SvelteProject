@@ -158,7 +158,10 @@
     ],
     "Tags": [
       "Events"
-    ]
+    ],
+    "EndpointName": "GetEvents",
+    "Description": "Get events.",
+    "Summary": "Get events"
   },
   {
     "ContainingType": "EventsApi.src.Events.CreateEvent",
@@ -176,16 +179,45 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Int32",
-        "MediaTypes": [
-          "application/json"
-        ],
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ],
     "Tags": [
       "Events"
-    ]
+    ],
+    "EndpointName": "CreateEvent",
+    "Description": "Create an event.",
+    "Summary": "Create event"
+  },
+  {
+    "ContainingType": "GetEvent",
+    "Method": "Handle",
+    "RelativePath": "events/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Events"
+    ],
+    "EndpointName": "GetEvent",
+    "Description": "Get event by id.",
+    "Summary": "Get event"
   },
   {
     "ContainingType": "MinimalApi.src.Events.DeleteEvent",
@@ -210,7 +242,10 @@
     ],
     "Tags": [
       "Events"
-    ]
+    ],
+    "EndpointName": "DeleteEvent",
+    "Description": "Delete a event by ID.",
+    "Summary": "Delete event"
   },
   {
     "ContainingType": "MinimalApi.src.Events.UpdateEvent",
@@ -240,31 +275,9 @@
     ],
     "Tags": [
       "Events"
-    ]
-  },
-  {
-    "ContainingType": "MinimalApi.src.EventsAlt.GetEvent",
-    "Method": "Handle",
-    "RelativePath": "events/{id}",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ],
-    "Tags": [
-      "Events"
-    ]
+    "EndpointName": "UpdateEvent",
+    "Description": "Update event by id.",
+    "Summary": "Update event"
   }
 ]
